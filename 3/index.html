@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Operators - Switch</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="../asset/css/app.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../asset/css/styles.css">
+</head>
+<body>
+<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row margin-top-30">
+        <div class="col-md-6 offset-3 text-center">
+            <h3 class="title">Employees</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi ducimus esse officia tempore
+                veritatis? Distinctio, molestiae, odit! Corporis, debitis distinctio dolorem eveniet laudantium
+                obcaecati repudiandae. Aliquid at ducimus velit.
+            </p>
+
+            <!-- Search employee according to province -->
+            <div class="form-group">
+                <input type="text" class="form-control" onkeyup="search();" id="search" placeholder="Search province's employees">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-2">
+
+            <!-- Employees -->
+            <table class="table table-bordered table-sm">
+                <thead class="text-center">
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Province</th>
+                </thead>
+                <tbody class="text-center">
+                <tr class="kabul">
+                    <td>1</td>
+                    <td>Jamal</td>
+                    <td>Ahamdi</td>
+                    <td>jamal@email.com </td>
+                    <td>Kabul</td>
+                </tr>
+                <tr class="kabul">
+                    <td>2</td>
+                    <td>Ali</td>
+                    <td>Nadiri</td>
+                    <td>ali@email.com </td>
+                    <td>Kabul</td>
+                </tr>
+                <tr class="herat">
+                    <td>3</td>
+                    <td>Asad</td>
+                    <td>Omidian</td>
+                    <td>asad@email.com </td>
+                    <td>Herat</td>
+                </tr>
+                <tr class="herat">
+                    <td>4</td>
+                    <td>Uma</td>
+                    <td>Asadi</td>
+                    <td>uma@email.com </td>
+                    <td>Herat</td>
+                </tr>
+                <tr class="parwan">
+                    <td>5</td>
+                    <td>Omid</td>
+                    <td>Dawoodi</td>
+                    <td>omid@email.com </td>
+                    <td>Parwan</td>
+                </tr>
+                <tr class="parwan">
+                    <td>6</td>
+                    <td>Wali</td>
+                    <td>Haji</td>
+                    <td>wali@email.com </td>
+                    <td>Parwan</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
